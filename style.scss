@@ -1,0 +1,169 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+$color1: #ed008d;
+$color2: #f7bad5;
+$color3: #00b0f0;
+$color4: #03a688;
+$color5: #ffef00;
+$color6: #302c93;
+$color7: #037d67;
+$color8: #a01d8c;
+$border-radius: 10px;
+
+.calculator-face {
+  display: flex;
+  margin-top: 10%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  width: 300px;
+  //border: 1px #000 solid;
+  border-radius: $border-radius;
+  height: 500px;
+}
+.display {
+  height: 20%;
+  display: flex;
+  background: $color6;
+  color: $color2;
+  padding: 0rem;
+  font-size: 2.5rem;
+  border: 3px $color6 solid;
+  border-radius: $border-radius $border-radius 0 0;
+  justify-content: flex-end;
+  align-items: flex-end;
+  h1 {
+    padding-right: 1rem;
+    margin: 0;
+  }
+}
+
+.flash h1 {
+  display: none;
+}
+.length-6 {
+  font-size: 72px;
+}
+.length-7 {
+  font-size: 67px;
+}
+.length-8 {
+  font-size: 59px;
+}
+.length-9 {
+  font-size: 52px;
+}
+.length-10 {
+  font-size: 47px;
+}
+.length-11 {
+  font-size: 42px;
+}
+.length-12,
+.length-13 {
+  font-size: 35px;
+}
+.length-15,
+.length-14 {
+  font-size: 30px;
+}
+
+button {
+  font-size: 2.5rem;
+  font-weight: 900;
+  transition: background-color 0.5s;
+  &:active {
+    transition: background-color 0s;
+  }
+}
+
+.operations button:active {
+  background-color: #c224aa;
+}
+
+.numbers button:active {
+  background-color: #89ccc0;
+}
+
+.operations button.last-action {
+  //border: 2px #302c93 solid;
+  background-color: $color2;
+  color: $color8;
+}
+
+.misc button:active {
+  background-color: $color4;
+}
+
+.controls {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
+}
+
+.operations {
+  display: flex;
+  flex-direction: column;
+}
+
+.misc {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+  button {
+    color: $color2;
+    background: $color7;
+    border: 1px #302c93 solid;
+    border-radius: 0px;
+    width: 33.33%;
+  }
+}
+.numbers {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  button {
+    color: $color2;
+    background: $color4;
+    border: 1px #302c93 solid;
+    width: 33.33%;
+    height: 25%;
+  }
+  button:nth-of-type(10n) {
+    width: 66.66%;
+    border-radius: 0 0 0 $border-radius;
+  }
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 100%;
+}
+
+.operations {
+  height: 100%;
+  button {
+    background-color: $color8;
+    color: $color2;
+    border: 1px #302c93 solid;
+    height: 20%;
+  }
+  button:last-of-type {
+    border-radius: 0 0 $border-radius 0;
+  }
+}
