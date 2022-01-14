@@ -8,4 +8,4 @@ The calculator uses Formula/Expression Logic, i.e. it follows the order of opera
 
 Visit it on [stackblitz](https://react-ts-1cpsnv.stackblitz.io) or check out the [demo](https://qy741.csb.app/)
 
-![Calculator Preview](fccCalculator.png)
+<img src="fccCalculator.png" alt="Calculator Preview" width=400 />
