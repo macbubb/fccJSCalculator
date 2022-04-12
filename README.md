@@ -6,6 +6,6 @@ The design and interface was inspired by macOS + iOS + [808s and Heartbreak](htt
 
 The calculator uses Formula/Expression Logic, i.e. it follows the order of operations without requiring parenthesis.
 
-Visit it on [stackblitz](https://react-ts-1cpsnv.stackblitz.io) or check out the [demo](https://qy741.csb.app/)
+Demo it on [stackblitz](https://react-ts-1cpsnv.stackblitz.io).
 
 <img src="fccCalculator.png" alt="Calculator Preview" width=400 />
